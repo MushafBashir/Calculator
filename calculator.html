@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div>
+    <input type="text" id = "input"><br><br>
+    <button id = "top" class = "top" onclick = "input.value = ''">AC</button>
+    <button id = "top" class = "top" onclick = "input.value = input.value.toString().slice(0,-1)">DE</button>
+    <button id = "top" class = "top" onclick = "input.value += '.'">. </button>
+    <button id = "top" class = "equal" onclick = "input.value = eval(input.value)">=</button><br><br>
+
+
+    <button id ="button" class="numbers" onclick="input.value +='0'">0</button>
+    <button id ="button" class="numbers" onclick="input.value +='1'">1</button>
+    <button id ="button" class="numbers" onclick="input.value +='2'">2</button>
+    <button id ="button" class="numbers" onclick="input.value +='3'">3</button>
+    <button id ="button" class="numbers" onclick="input.value +='4'">4</button><br><br>
+    <button id ="button" class="numbers" onclick="input.value +='5'">5</button>
+    <button id ="button" class="numbers" onclick="input.value +='6'">6</button>
+    <button id ="button" class="numbers" onclick="input.value +='7'">7</button>
+    <button id ="button" class="numbers" onclick="input.value +='8'">8</button>
+    <button id ="button" class="numbers" onclick="input.value +='9'">9</button><br><br>
+
+    <button class="maths" onclick="input.value +='+'">+</button>
+    <button class="maths" onclick="input.value +='-'">-</button>
+    <button class="maths" onclick="input.value +='*'">x</button>
+    <button class="maths" onclick="input.value +='/'">/</button>
+</div>
+</body>
+</html>
